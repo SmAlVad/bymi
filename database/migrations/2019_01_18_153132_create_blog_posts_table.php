@@ -20,7 +20,7 @@ class CreateBlogPostsTable extends Migration
             $table->integer('user_id')->unsignet();
             
             $table->string('slug')->uniqie();
-            $table->string('tetle');
+            $table->string('title');
 
             $table->text('excerpt')->nullable();
             $table->text('content_raw'); 
