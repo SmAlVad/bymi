@@ -6,5 +6,8 @@ use App\Http\Controllers\Blog\BaseBlogController;
 
 abstract class BaseBlogAdminController extends BaseBlogController
 {
-    //
+    public function __construct()
+    {
+        //
+    }
 }
