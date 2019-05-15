@@ -108,9 +108,6 @@ class CategoryController extends BaseBlogAdminController
     public function update(BlogCategoryUpdateRequest $request, $id)
     {
         $item = $this->blogCategoryRepository->getEdit($id);
-        if (empty($item)) {
-            abort(404);
-        }
 
         if (empty($item)) {
             return back()
