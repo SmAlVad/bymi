@@ -1,0 +1,113 @@
+// Vars
+@import "vars"
+
+#app
+    min-height: 100vh
+    #sidebar
+        height: 100%
+        position: fixed
+        top: 0
+        left: 0
+        width: 350px
+
+#main-wrapper
+    margin-left: 350px
+    #header
+        background-color: $blog-violet
+        height: 100px
+        padding: 0 $offset
+        display: flex
+        justify-content: space-between
+        align-items: center
+        #toggle-mobile-nav
+            font-size: 1.2rem
+            cursor: pointer
+        .logo
+            a
+                font-size: 2.5rem
+                text-transform: uppercase
+                letter-spacing: 1px
+                color: #fff
+                font-weight: 700
+
+#sidebar
+    background-color: #24252d
+    position: relative
+
+
+// Main Search
+#blog-main-search
+    height: 100px
+    background-color: #2d2e39
+    form
+        height: 100%
+        padding: 0 30px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        #main-search
+            background-color: transparent
+            border: none
+            color: #fff
+        button
+            border: none
+            background-color: inherit
+            color: #ccc
+
+// Navigation
+nav
+    padding: 50px 30px
+    ul
+        list-style-type: none
+        padding: 0
+        margin: 0
+        li
+            color: #fff
+            text-transform: uppercase
+            font-size: 15px
+            display: block
+            font-weight: 300
+            padding: 15px 0
+            border-bottom: solid 1px #1a1b20
+            &:last-child
+                border-bottom: none
+            h6
+                cursor: pointer
+                font-size: 15px
+                font-weight: 300
+            a
+                display: block
+                text-transform: uppercase
+                color: inherit
+                border-bottom: 0
+                cursor: pointer
+                font-size: 15px
+                font-weight: 300
+                &:hover
+                    color: #535ba0
+                    text-decoration: none
+            .hidden
+                display: none
+                ul
+                    padding-left: 30px
+            .active
+                display: block!important
+
+
+
+
+// Footer
+#footer
+    display: flex
+    padding: 30px
+    position: absolute
+    bottom: 0
+    left: 0
+    text-align: center
+    color: #fff
+    font-weight: 300
+    width: 100%
+
+    a
+        color: #ccc
+        font-size: 1.2rem

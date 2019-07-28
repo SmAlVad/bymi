@@ -5,9 +5,12 @@
 /storage/*.key
 /vendor
 /.idea
+/public/images
+/public/svgs
 
 # Files
 tags
+artisan.txt
 route.txt
 .env
 .phpunit.result.cache

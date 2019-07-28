@@ -10,17 +10,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Роут главной страницы
+Route::get('/', 'IndexController@index')->name('index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// Авторизация, регистрация
 Auth::routes();
 
+// Дамашняя страница пользователя
 Route::get('/home', 'HomeController@index')->name('home');
 
+// Роуты Блога
 Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function (){
-    Route::resource('/posts', 'PostController')->names('blog.posts');
+    Route::get('/posts', 'PostController@index')->name('blog.posts');
 });
 
 //> Админка блога
